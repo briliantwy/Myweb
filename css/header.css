@@ -1,0 +1,234 @@
+body,html{
+	width: 100%;
+    overflow-x: hidden;
+}
+
+
+#header{
+    width: 1600px;
+    height: 880px;
+    
+    margin: auto;
+    background-color: #EFEFEF;
+}
+.nav_logo{
+	position: absolute;
+    left: 100px;
+    top:45px;
+    z-index: 999;
+}
+.nav_img {
+	 width: 100%;
+	
+	 margin: auto;
+	 position: relative;
+ }
+ .nav_img img {
+     height: 666px;
+	 width: 100%;
+	 position: absolute;
+	 right: 0;
+	 top: 0;
+	 transition: 2s;
+ }
+ .nav_img img:nth-child(1) {
+     position: relative;
+ }
+.nav_follow {
+	 width: 150px;
+	 height: 30px;
+	 margin: auto;
+	 display: flex;
+	 position: absolute;
+	 right: 0px;
+	 left: 0px;
+	 top:620px;
+	 height: 666px;
+
+	 justify-content: space-between;
+ }
+.nav_follow span {
+	 width: 15px;
+	 height: 15px;
+	 border-radius: 50%;
+	 border: 3px solid #F9E4CD;
+     z-index: 999;
+ }
+ .nav_follow span:hover {
+     cursor: pointer;
+ }
+ .nav_button #leftBut{
+ 	width:54px;
+ 	height: 54px;
+    padding-top: 10px;
+ 	background-color: rgba(255,234,0,0.6);
+ 	position: absolute;
+ 	top:500px;
+ 	left:0;
+ 	z-index: 999;
+ 	outline-style: none;
+ 	text-align: center;
+    cursor : pointer;
+ }
+ .nav_button #leftBut:hover{
+ 	background: rgba(3,3,3,0.2);
+ }
+ .nav_setting{
+ 	width: 42px;
+ 	height: 42px;
+ 	position: absolute;
+ 	left: 0;
+ 	top: 400px;
+ 	background:rgba(3,3,3,0.6);
+ 	z-index: 999;
+ }
+ .nav_setting:hover{
+ 	background-color: rgba(255,234,0,0.5);
+ }
+ .nav_setting img{
+ 	width: 42px;
+ 	height: 42px;
+ }
+ .fly_button{
+ 	display: block;
+ 	position: absolute;
+ 	left: -136px;
+ 	top:0;
+ 	z-index: 999;
+ 	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;
+	animation-delay:1s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-play-state:running;
+ }
+ @keyframes myfirst
+{
+	0%   {background:#3B3838; left:-136px; top:560px;}
+	25%  {background:#DCDCDC; left:80px; top:560px;}
+    50%  {background:#FFEA00; left:130px; top:560px;}  
+    70%  {background:#FFEA00; left:130px; top:560px;}
+    100%  {background:#FFEA00; left:130px; top:560px;}  
+}
+  .fly_girl img{
+      position: absolute;
+      right:-300px;
+      top:160px;
+      z-index: 999;
+      animation-name:mysecond;
+      animation-duration:3s;
+      animation-timing-function:linear;
+      animation-delay:1s;
+      animation-iteration-count:infinite;
+      animation-direction:alternate;
+      animation-play-state:running; 
+ }
+ @keyframes mysecond
+{
+    0%   {right:-400px; top:160px;}
+    25%  {right:40px; top:180px;}
+    50%  {right:80px; top:180px;}  
+    70%  {right:100px; top:160px;}
+    100%  {right:100px; top:160px;}  
+}
+  
+  .fly_button span{
+  	display: inline-block;
+  	width: 100px;
+  	height: 36px;
+  	text-align: center;
+  	line-height: 36px;
+  	font-size: 18px;
+  	background: rgba(3,3,3,0.6);
+  }
+   .fly_button span:hover{
+   	background-color: rgba(255,234,0,1);
+   }
+   .fly_button div{
+  /* 	display: inline-block;*/
+    background:  rgba(255,234,0,1);
+    width: 36px;
+    height: 36px;
+    text-align: center;
+  	line-height: 36px;
+    float: right
+   }
+ /*头部导航条*/
+ #nav{
+ 	width: 940px;
+ 	height: 72px;
+ 	background-color: rgba(3,3,3,0.6);
+ 	position: absolute;
+    left:50%;
+    margin-left: -470px;
+ 	top: 30px;
+ 	z-index: 999;
+ }
+ #nav ul li{
+ 	width: 100%;
+ 	height: inherit;
+ 	text-align: center;
+ 	line-height: 72px;
+ 	color: white;
+ }
+ #nav ul li:hover{
+ 	background-color: rgba(255,234,0,0.8);
+ }
+ #nav ul li a{
+ 	font-size: 24px;
+ }
+ /*下方完善*/
+ .nav_setings{
+ 	width: 960px;
+ 	height: 287px;
+ 	position: absolute;
+ 	top:600px;
+ 	left:50%;
+ 	margin-left: -480px;
+    z-index: 999;
+
+ }
+ .nav_setings ul .i p{
+ 	font-size: 20px;
+ 	margin-bottom: 10px;
+  }
+ .nav_setings ul li{
+ 	float: left;
+ 	width: 240px;
+ 	height: 250px;
+ 	text-align: center;
+    padding-top: 40px;
+ }	
+  .nav_setings ul .i a{
+  	display: inline-block;
+  	width:110px;
+  	height: 100px;
+  	margin-bottom: 15px;
+  }
+ .nav_setings ul .i:hover{
+ 	background-color:  #FFFFFF;
+ } 
+ .nav_setings ul li .change{
+ 	width: 85px;
+ 	height: 70px;
+ 	transition:width 0.5s;
+    -moz-transition:width 0.5s; /* Firefox 4 */
+    -webkit-transition:width 0.5s; /* Safari and Chrome */
+    -o-transition:width 0.5s; /* Opera */
+ }
+ .nav_setings ul li .change:hover{
+ 	
+ 	height: 90px;
+   width: 110px;
+ }
+ .nav_setings ul li:nth-child(2){
+ 	background-color: #FFEA00;
+ }
+ .nav_setings ul li:nth-child(3){
+ 	background-color: #EDDA06;
+ }
+ .nav_setings ul li:nth-child(4){
+ 	background-color: #DECB01;
+ }
+ 
