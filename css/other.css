@@ -1,0 +1,60 @@
+body{
+	background: rgba(3,3,3,0.2);
+}
+/*头部导航条*/
+.wrap{
+	width: 100%;
+   background: #434444;
+
+}
+.wrap .fixed{
+
+	width: 1300px;
+	background-color: #888888;
+	margin: 0 auto;
+}
+.wrap .fixed .header ul{
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin-left: -480px;
+    width: 940px;
+    height: 76px;
+   background: rgba(3,3,3,0.6);
+   
+} 
+.wrap .fixed .header ul li{
+	text-align: center;
+	height: 75px;
+	line-height: 75px;
+	width: 156px;
+	float: left;
+}
+.wrap .fixed .header ul li:hover{
+background-color: rgba(255,234,0,0.7);
+}
+.wrap .fixed .header ul li a{
+	font-size: 18px;
+}
+/*主要内容部分*/
+.section{
+	padding-top: 20px;
+	background-color: rgba(255,234,0,0.4);
+	width: 940px;
+	position: absolute;
+	top: 115px;
+	left: 50%;
+	margin-left: -480px;
+}
+.section h1{
+	font-size: 18px;
+	margin-bottom: 10px;
+
+}
+.section h3{
+	padding-bottom: 5px;
+}
+.section p{
+	font-size: 16px;
+	padding-bottom: 5px;
+}
